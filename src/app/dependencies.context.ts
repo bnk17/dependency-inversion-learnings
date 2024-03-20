@@ -1,0 +1,13 @@
+
+import { createContext, useContext } from "react"
+import { Dependencies } from "./dependencies/dependencies"
+
+export const DependenciesContext = createContext<Dependencies| null>(null)
+
+export const useDependencies = (): Dependencies => {
+    const context = useContext(DependenciesContext)
+    if (!context) {
+        throw new Error("useDependencies must be used within a DependenciesProvider")
+    }
+    return context
+}

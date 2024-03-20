@@ -1,8 +1,14 @@
-## Dendency-inversion principle Learning
+## Purpose of this app 
 
-This repository houses a simple React/Next.js/TypeScript application created for personal learning purposes. The app is designed to help me grasp and experiment with the Dependency Inversion Principle in frontend development. Through this project, I aim to deepen my understanding of the principle and its application within my own development workflow.
+This repository is a basic React/Next.js/TypeScript application developed for personal learning objectives.
+It an app that fetches a comment from a free API and displays it on the screen.
+With this project, I intend to enhance my comprehension of the Dendency-inversion principle  and its implementation in my development process.
 
-##Links to related articles ()
-[Inversion de dépendances en front-end](https://www.hexa-web.fr/blog/dependency-inversion-front-end)
+## To run the app
+```bash
+# to install dependencies
+yarn 
 
-[Architecture Hexagonale : trois principes et un exemple d'implémentation](https://blog.octo.com/architecture-hexagonale-trois-principes-et-un-exemple-dimplementation)
+# to run the app
+yarn dev 
+ ```
