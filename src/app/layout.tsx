@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { dependencies } from "./dependencies/dependencies";
-import { DependenciesContext } from "./dependencies.context";
-import { ContextProvider } from "./contextProvider";
+import { dependencies } from "../dependencies/dependencies";
+import { DependenciesContext } from "../contexts/dependencies.context";
+import { DepenciesContextProvider } from "../contexts/dependenciesContextProvider";
 import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">   
         <body className={`h-screen ${inter.className}`}>
-          <ContextProvider>{children}</ContextProvider>
+          <DepenciesContextProvider>{children}</DepenciesContextProvider>
           <Toaster />
         </body>
     </html>

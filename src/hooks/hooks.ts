@@ -1,8 +1,6 @@
-
-import { createContext, useContext } from "react"
-import { Dependencies } from "./dependencies/dependencies"
-
-export const DependenciesContext = createContext<Dependencies| null>(null)
+import { DependenciesContext } from "@/contexts/dependencies.context"
+import { Dependencies } from "@/dependencies/dependencies"
+import { useContext } from "react"
 
 export const useDependencies = (): Dependencies => {
     const context = useContext(DependenciesContext)
